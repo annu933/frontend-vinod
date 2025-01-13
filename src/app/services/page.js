@@ -1,8 +1,10 @@
 "use client";
 import CustomCard from "../../components/card/page";
 import React from "react";
-import { FaHotel } from "react-icons/fa";
+import { FaHotel, FaSpa, FaGlassCheers } from "react-icons/fa";
 import { TfiLayoutLineSolid } from "react-icons/tfi";
+import { MdRestaurant, MdSportsTennis } from "react-icons/md";
+import { CgGym } from "react-icons/cg";
 
 function Service() {
   return (
@@ -28,31 +30,31 @@ function Service() {
             title="Food & Restaurant"
             content="Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem."
             className="bg-white hover:bg-orange hover:text-white w-full sm:w-1/2 lg:w-1/4"
-            icon={<FaHotel />}
+            icon={<MdRestaurant />}
           />
           <CustomCard
             title="Spa & Fitness"
             content="Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem."
             className="bg-white hover:bg-orange hover:text-white w-full sm:w-1/2 lg:w-1/4"
-            icon={<FaHotel />}
+            icon={<FaSpa />}
           />
           <CustomCard
             title="Sports & Gaming"
             content="Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem."
             className="bg-white hover:bg-orange hover:text-white w-full sm:w-1/2 lg:w-1/4"
-            icon={<FaHotel />}
+            icon={<MdSportsTennis />}
           />
           <CustomCard
             title="Event & Party"
             content="Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem."
             className="bg-white hover:bg-orange hover:text-white w-full sm:w-1/2 lg:w-1/4"
-            icon={<FaHotel />}
+            icon={<FaGlassCheers />}
           />
           <CustomCard
             title="GYM & Yoga"
             content="Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem."
             className="bg-white hover:bg-orange hover:text-white w-full sm:w-1/2 lg:w-1/4"
-            icon={<FaHotel />}
+            icon={<CgGym />}
           />
         </div>
       </section>
