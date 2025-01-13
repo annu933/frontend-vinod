@@ -10,19 +10,25 @@ const CustomCard = ({ title, content, imageUrl, footer, className, icon }) => {
       {imageUrl && <img src={imageUrl} alt={title} className="card-img-top" />}
       <div className="card-body">
         {icon && (
-          <div className="flex justify-center items-center">
-            <div
-              className="icon flex justify-center text-orange flex-wrap p-2 w-12 h-12 border-1 border-gray rounded-sm text-2xl
+          <div className="flex justify-center items-center ">
+            <div className="border border-[#dee2e6]">
+              <div
+                className="icon flex justify-center text-orange flex-wrap p-2 w-12 h-12 m-1 border border-[#dee2e6] rounded-sm text-2xl
             transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110  duration-300
             "
-            >
-              {icon}
+              >
+                {icon}
+              </div>
             </div>
           </div>
         )}
-        {title && <h1 className="card-title font-bold text-center">{title}</h1>}
+        {title && (
+          <h1 className="text-xl card-title font-bold text-center font-montserrat">
+            {title}
+          </h1>
+        )}
         {content && (
-          <p className="card-text text-gray text-center text-base font-medium">
+          <p className="card-text text-gray text-center text-base font-[400] font-heebo my-2">
             {content}
           </p>
         )}
