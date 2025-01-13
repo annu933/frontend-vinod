@@ -22,6 +22,20 @@ export default {
       fontFamily: {
         sans: ["Roboto", "sans-serif"], // Default font for the entire application
         montserrat: ["Montserrat", "sans-serif"], // Add Montserrat to the fontFamily
+        heebo: ["Heebo", "sans-serif"],
+      },
+      animation: {
+        shimmer: "shimmer 2s linear infinite",
+      },
+      keyframes: {
+        shimmer: {
+          from: {
+            backgroundPosition: "0 0",
+          },
+          to: {
+            backgroundPosition: "-200% 0",
+          },
+        },
       },
       animation: {
         "meteor-effect": "meteor 5s linear infinite",
