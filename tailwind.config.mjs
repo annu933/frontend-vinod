@@ -23,6 +23,19 @@ export default {
         sans: ["Roboto", "sans-serif"], // Default font for the entire application
         montserrat: ["Montserrat", "sans-serif"], // Add Montserrat to the fontFamily
       },
+      animation: {
+        "meteor-effect": "meteor 5s linear infinite",
+      },
+      keyframes: {
+        meteor: {
+          "0%": { transform: "rotate(215deg) translateX(0)", opacity: "1" },
+          "70%": { opacity: "1" },
+          "100%": {
+            transform: "rotate(215deg) translateX(-500px)",
+            opacity: "0",
+          },
+        },
+      },
     },
   },
   plugins: [],
