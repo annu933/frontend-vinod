@@ -16,7 +16,7 @@ function About() {
           <div className="flex justify-center ">
             <img
               src="/images/aboutUs.jpg"
-              alt="About Us"
+              alt="aboutUs"
               className="w-full max-w-[450px] h-auto lg:h-[600px]"
             />
           </div>
@@ -27,28 +27,33 @@ function About() {
               <p className="text-2xl lg:text-4xl font-bold text-blue my-4 text-left">
                 We Provide Best Tour Packages In Your Budget
               </p>
-              <p className="text-gray-600 text-sm lg:text-base lg:w-3/4 font-medium">
-                Dolores lorem lorem ipsum sit et ipsum. Sadip sea amet diam
-                dolore sed et. Sit rebum labore sit sit ut vero no sit. Et elitr
-                stet dolor sed sit et sed ipsum et kasd ut. Erat duo eos et erat
-                sed diam duo.
+              <p className="text-gray-600 text-sm lg:text-base lg:w-3/4 font-medium font-heebo">
+                Find amazing travel experiences with our affordable tour
+                packages. Whether you want adventure, relaxation, or to explore
+                new cultures, we have something for everyone. Let us help you
+                plan your perfect trip today!
               </p>
               <div className="flex flex-wrap gap-4 my-4">
                 <img
-                  src="/images/about1.jpg"
-                  alt="About 1"
+                  src="/images/jaipur2.jpg"
+                  alt="about1"
                   className="w-[120px] lg:w-[250px] rounded-sm"
                 />
                 <img
                   src="/images/about2.jpg"
-                  alt="About 2"
+                  alt="about2"
+                  className="w-[120px] lg:w-[250px] rounded-sm"
+                />
+                <img
+                  src="/images/about1.jpg"
+                  alt="about2"
                   className="w-[120px] lg:w-[250px] rounded-sm"
                 />
               </div>
               <CustomButton
-                label="Click Me"
+                label="Book Now"
                 onClick={handleClick}
-                className="bg-orange text-white px-4 py-2 rounded-sm"
+                className="bg-orange hover:bg-[#0F172B]  text-white px-4 py-2 rounded-sm hover:shadow-[4px_4px_0px_0px_orange]"
               />
             </div>
           </div>

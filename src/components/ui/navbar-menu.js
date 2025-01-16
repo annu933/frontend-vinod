@@ -94,7 +94,8 @@ export const MenuItem = ({ setActive, active, item, children }) => {
       </motion.p>
 
       {/* Dropdown Menus */}
-      {((!isMobile && active === item) || (isMobile && isDropdownOpen)) && (
+      {((!isMobile && active === item && children) ||
+        (isMobile && isDropdownOpen)) && (
         <motion.div
           initial={{ opacity: 0, scale: 0.85, y: 10 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}

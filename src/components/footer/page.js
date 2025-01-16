@@ -12,7 +12,7 @@ export default function Footer() {
             <div className="flex items-center h-20 w-auto">
               <img
                 className="h-10 w-auto text-orange"
-                src="/images/2jan-.png"
+                src="/images/logo.png"
                 alt="Your Company"
               />
             </div>
