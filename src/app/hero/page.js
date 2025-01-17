@@ -26,7 +26,7 @@ const Hero = () => {
         </button> */}
         <CustomButton
           label="Book Now"
-          className="px-10 py-4 rounded-sm  bg-orange  text-white text-sm hover:shadow-[4px_4px_0px_0px_#fff] transition duration-200"
+          className="px-10 py-3 rounded-sm  bg-orange  text-white text-lg hover:shadow-[4px_4px_0px_0px_#fff] transition duration-200"
         />
       </div>
     </div>
