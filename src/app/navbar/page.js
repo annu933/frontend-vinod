@@ -72,6 +72,13 @@ import {
 import { cn } from "@/app/utils/cn";
 import Link from "next/link";
 import { FiMenu, FiX } from "react-icons/fi";
+import { FaPhone } from "react-icons/fa6";
+import { MdEmail } from "react-icons/md";
+import { RiFacebookFill } from "react-icons/ri";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa";
+import { AiFillYoutube } from "react-icons/ai";
+import { RiWhatsappFill } from "react-icons/ri";
 
 export default function Navbar({ className }) {
   const [active, setActive] = useState(null);
@@ -97,10 +104,11 @@ export default function Navbar({ className }) {
 
   return (
     <div className={cn("", className)}>
-      <Menu setActive={setActive}>
+      <Menu setActive={setActive} className="gap-20 px-4">
         {/* Logo Section */}
-        <ProductItem href="#" src="/images/logo.png" alt="logo" />
-
+        <div className="lg:p-7">
+          <ProductItem href="#" src="/images/logo.png" alt="logo" />
+        </div>
         {/* Hamburger Menu for Mobile */}
         <div className="lg:hidden">
           <button
@@ -110,25 +118,82 @@ export default function Navbar({ className }) {
             {isMobileMenuOpen ? <FiX size={24} /> : <FiMenu size={24} />}
           </button>
         </div>
+        <div className="flex flex-col xl:w-full hidden lg:block xl:block">
+          <div className="flex justify-between bg-white px-5 py-3 ">
+            <div className="flex ">
+              <h5 className="text-gray lg:mr-2">
+                {" "}
+                <MdEmail color="orange" className="inline-block lg:mr-2" />{" "}
+                jaymaatravels@gmail.com
+              </h5>
+              <h5 className="text-gray lg:mr-2">
+                <FaPhone color="orange" className="inline-block lg:mr-2" />
+                05946369233,+91 8894887494
+              </h5>
+              <a
+                href="https://wa.me/8894887494"
+                target="_blank"
+                className="text-gray"
+              >
+                <RiWhatsappFill
+                  color="green"
+                  className="inline-block lg:mr-2"
+                />
+                8894887494
+              </a>
+            </div>
+            <div className="flex gap-4">
+              <a
+                href="https://www.facebook.com"
+                target="_blank"
+                className="text-white"
+              >
+                <RiFacebookFill color="orange" className="inline-block" />
+              </a>
+              <a
+                href="https://www.twitter.com"
+                target="_blank"
+                className="text-white"
+              >
+                <FaXTwitter color="orange" className="inline-block" />
+              </a>
+              <a
+                className="text-white"
+                href="https://www.instagram.com/jai_maa_travel_uk_04/"
+                target="_blank"
+              >
+                <FaInstagram color="orange" className="inline-block" />
+              </a>
+              <a
+                href="https://www.youtube.com"
+                target="_blank"
+                className="text-white"
+              >
+                <AiFillYoutube color="orange" className="inline-block" />
+              </a>
+            </div>
+          </div>
 
-        {/* Navbar Items */}
-        <div
-          className={cn(
-            "flex-col lg:flex-row lg:flex gap-8 lg:items-center lg:justify-center lg:static lg:visible",
-            {
-              "flex absolute top-[100%] left-0 w-full bg-blue text-white shadow-lg p-4 lg:p-0 lg:bg-transparent lg:shadow-none":
-                isMobileMenuOpen,
-              hidden: !isMobileMenuOpen,
-            }
-          )}
-        >
-          <Link href={"#"}>
-            <MenuItem setActive={setActive} active={active} item="Home" />
-          </Link>
-          <Link href={"#"}>
-            <MenuItem setActive={setActive} active={active} item="Booking" />
-          </Link>
-          <div
+          <div className="flex justify-between px-5 py-4">
+            {/* Navbar Items */}
+            <div
+              className={cn(
+                "flex-col lg:flex-row lg:flex gap-8 lg:items-center lg:justify-center lg:static lg:visible",
+                {
+                  "flex absolute top-[100%] left-0 w-full bg-blue text-white shadow-lg p-4 lg:p-0 lg:bg-transparent lg:shadow-none":
+                    isMobileMenuOpen,
+                  hidden: !isMobileMenuOpen,
+                }
+              )}
+            >
+              <Link href={"#"}>
+                <MenuItem setActive={setActive} active={active} item="Home" />
+              </Link>
+              <Link href={"#about"}>
+                <MenuItem setActive={setActive} active={active} item="About" />
+              </Link>
+
+              {/* <div
             ref={dropdownRef}
             onClick={() =>
               setActive(active === "Our Services" ? null : "Our Services")
@@ -144,29 +209,49 @@ export default function Navbar({ className }) {
                 </div>
               )}
             </MenuItem>
-          </div>
-          <Link href={"/contact"}>
-            <MenuItem setActive={setActive} active={active} item="Contact Us" />
-          </Link>
+          </div> */}
+              <Link href={"#services"}>
+                <MenuItem
+                  setActive={setActive}
+                  active={active}
+                  item="Services"
+                />
+              </Link>
+              <Link href={"#booking"}>
+                <MenuItem
+                  setActive={setActive}
+                  active={active}
+                  item="Booking"
+                />
+              </Link>
+              <Link href={"#contact"}>
+                <MenuItem
+                  setActive={setActive}
+                  active={active}
+                  item="Contact Us"
+                />
+              </Link>
 
-          {/* Action Buttons */}
-          <div className="flex gap-4 lg:ml-4   sm:block  lg:hidden">
-            <button className="signup px-4 py-2 rounded-md border border-black hover:border-white bg-orange hover:bg-blue text-black hover:text-white text-sm hover:shadow-[4px_4px_0px_0px_orange] transition duration-200">
-              Sign up
-            </button>
-            <button className="px-4 py-2 rounded-md border border-black bg-white text-black text-sm hover:shadow-[4px_4px_0px_0px_orange] transition duration-200">
-              Login
-            </button>
+              {/* Action Buttons */}
+              <div className="flex gap-4 lg:ml-4   sm:block  lg:hidden">
+                <button className="signup px-4 py-2 rounded-md border border-black hover:border-white bg-orange hover:bg-blue text-black hover:text-white text-sm hover:shadow-[4px_4px_0px_0px_orange] transition duration-200">
+                  Sign up
+                </button>
+                <button className="px-4 py-2 rounded-md border border-black bg-white text-black text-sm hover:shadow-[4px_4px_0px_0px_orange] transition duration-200">
+                  Login
+                </button>
+              </div>
+            </div>
+            {/* Action Buttons for desktop side */}
+            <div className="  lg:ml-4 hidden lg:block">
+              <button className=" px-4 py-2 rounded-md border border-black hover:border-white bg-orange hover:bg-blue text-black hover:text-white text-sm hover:shadow-[4px_4px_0px_0px_orange] transition duration-200 mr-3">
+                Sign up
+              </button>
+              <button className="px-4 py-2 rounded-md border border-black bg-white text-black text-sm hover:shadow-[4px_4px_0px_0px_orange] transition duration-200">
+                Login
+              </button>
+            </div>
           </div>
-        </div>
-        {/* Action Buttons for desktop side */}
-        <div className="  lg:ml-4 hidden lg:block">
-          <button className=" px-4 py-2 rounded-md border border-black hover:border-white bg-orange hover:bg-blue text-black hover:text-white text-sm hover:shadow-[4px_4px_0px_0px_orange] transition duration-200 mr-3">
-            Sign up
-          </button>
-          <button className="px-4 py-2 rounded-md border border-black bg-white text-black text-sm hover:shadow-[4px_4px_0px_0px_orange] transition duration-200">
-            Login
-          </button>
         </div>
       </Menu>
     </div>

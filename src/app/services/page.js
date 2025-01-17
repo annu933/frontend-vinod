@@ -8,16 +8,7 @@ import { CgGym } from "react-icons/cg";
 
 function Service() {
   return (
-    <div className="container mx-auto px-4 py-8 bg-[#0F172B]">
-      <div>
-        <h1 className="text-2xl font-medium text-orange mb-2 text-center flex items-center justify-center">
-          <TfiLayoutLineSolid className="mr-1" />
-          Our Services <TfiLayoutLineSolid className="ml-1" />
-        </h1>
-        <p className="text-4xl font-bold text-orange mb-4 text-center">
-          <span className="text-white">Explore Our</span> Services
-        </p>
-      </div>
+    <div>
       <section>
         <div className="flex flex-wrap w-full gap-8 justify-center items-center my-10">
           <CustomCard

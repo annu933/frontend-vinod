@@ -2,6 +2,7 @@
 
 import CustomButton from "@/components/button/page";
 import React from "react";
+import { TfiLayoutLineSolid } from "react-icons/tfi";
 
 function About() {
   const handleClick = () => {
@@ -9,8 +10,8 @@ function About() {
   };
 
   return (
-    <div className="container mx-auto px-4 py-8">
-      <section>
+    <div id="about" className="container mx-auto px-4 py-8 bg-[#f3f3f3] ">
+      <section className="lg:mt-40">
         <div className="flex flex-col lg:flex-row w-full justify-center gap-6 my-10">
           {/* Left Image */}
           <div className="flex justify-center ">
@@ -24,6 +25,9 @@ function About() {
           {/* Right Content */}
           <div className="relative w-full lg:w-1/2">
             <div className="shadow-xl p-4 bg-white relative lg:absolute lg:-left-20 lg:top-[3rem] z-50">
+              <h1 className="text-xl lg:text-2xl text-orange flex items-center font-montserrat">
+                About Us <TfiLayoutLineSolid className="ml-2" />
+              </h1>
               <p className="text-2xl lg:text-4xl font-bold text-blue my-4 text-left">
                 We Provide Best Tour Packages In Your Budget
               </p>

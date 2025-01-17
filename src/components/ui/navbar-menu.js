@@ -126,7 +126,7 @@ export const Menu = ({ setActive, children }) => {
     <nav
       // resets the state
       onMouseLeave={() => setActive(null)}
-      className="relative  border border-transparent dark:bg-black dark:border-white/[0.2] bg-blue shadow-input flex justify-center lg:space-x-4 px-8 py-6 flex justify-between items-center"
+      className="relative   dark:bg-black dark:border-white/[0.2] bg-blue shadow-input flex justify-center lg:space-x-4 xs:px-8 xs:py-6 flex justify-between items-center"
     >
       {children}
     </nav>
@@ -159,7 +159,7 @@ export const HoveredLink = ({ children, ...rest }) => {
   return (
     <Link
       {...rest}
-      className="text-blue dark:text-neutral-200 hover:text-black "
+      className="text-blue dark:text-neutral-200 hover:text-black z-50"
     >
       {children}
     </Link>
