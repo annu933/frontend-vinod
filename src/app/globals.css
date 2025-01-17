@@ -13,14 +13,14 @@
     --foreground: #ededed;
   }
 }
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-/* global.css */
-.fixed * {
-  border-radius: 0 !important;
+  /* font-family: Arial, Helvetica, sans-serif; */
 }

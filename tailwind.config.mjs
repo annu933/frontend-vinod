@@ -11,8 +11,8 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        orange: "#FEA116",
-        // orange: "#F75416",
+        // orange: "#FEA116",
+        orange: "#F68A38",
         blue: "#0F172B",
         black: "#000",
         white: "#fff",
@@ -22,6 +22,33 @@ export default {
       fontFamily: {
         sans: ["Roboto", "sans-serif"], // Default font for the entire application
         montserrat: ["Montserrat", "sans-serif"], // Add Montserrat to the fontFamily
+        heebo: ["Heebo", "sans-serif"],
+      },
+      animation: {
+        shimmer: "shimmer 2s linear infinite",
+      },
+      keyframes: {
+        shimmer: {
+          from: {
+            backgroundPosition: "0 0",
+          },
+          to: {
+            backgroundPosition: "-200% 0",
+          },
+        },
+      },
+      animation: {
+        "meteor-effect": "meteor 5s linear infinite",
+      },
+      keyframes: {
+        meteor: {
+          "0%": { transform: "rotate(215deg) translateX(0)", opacity: "1" },
+          "70%": { opacity: "1" },
+          "100%": {
+            transform: "rotate(215deg) translateX(-500px)",
+            opacity: "0",
+          },
+        },
       },
     },
   },
