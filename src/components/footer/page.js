@@ -136,9 +136,12 @@ export default function Footer() {
           <div>
             <h2 className="text-xl font-bold mb-4">Contact Us</h2>
             <ul className="space-y-2">
-              <li className="flex items-center space-x-2">
-                <IoLocationSharp />
-                <span>123 Main Street, Your City, Your Country</span>
+              <li className="flex items-start space-x-2">
+                <IoLocationSharp className="text-5xl" />
+                <span>
+                  shop number 18, New bridge compound, near new bus stand,
+                  Tallital, Nainital, Uttarakhand 263001
+                </span>
               </li>
               <li className="flex items-center space-x-2">
                 <FaPhone />
@@ -148,7 +151,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className="hover:text-orange"
                 >
-                  +123 456 7890 (WhatsApp)
+                  +91 8894887494
                 </a>
               </li>
               <li className="flex items-center space-x-2">
@@ -157,7 +160,7 @@ export default function Footer() {
                   href="mailto:info@travelsite.com"
                   className="hover:text-orange"
                 >
-                  info@travelsite.com
+                  jaymaatravels@gmail.com
                 </a>
               </li>
             </ul>
