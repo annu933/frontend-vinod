@@ -28,7 +28,7 @@ export default function TravelFormBanner() {
         <input
           type="text"
           name="destination"
-          value={formData.destination}
+          value={formData?.destination}
           onChange={handleChange}
           className="border border-[#D3D3D3] rounded-md px-4 py-2 outline-0 w-64"
           placeholder="Destination"
@@ -38,7 +38,7 @@ export default function TravelFormBanner() {
         <input
           type="date"
           name="departureDate"
-          value={formData.departureDate}
+          value={formData?.departureDate}
           onChange={handleChange}
           className="border border-[#D3D3D3] rounded-md px-4 py-2 outline-0 "
           required
@@ -47,7 +47,7 @@ export default function TravelFormBanner() {
         <input
           type="date"
           name="returnDate"
-          value={formData.returnDate}
+          value={formData?.returnDate}
           onChange={handleChange}
           className="border border-[#D3D3D3] rounded-md px-4 py-2 outline-0"
         />
@@ -55,7 +55,7 @@ export default function TravelFormBanner() {
         <input
           type="number"
           name="duration"
-          value={formData.duration}
+          value={formData?.duration}
           onChange={handleChange}
           className="border border-[#D3D3D3] rounded-md px-4 py-2  w-24"
           placeholder="Days"
