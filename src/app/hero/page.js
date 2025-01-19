@@ -21,13 +21,13 @@ const Hero = () => {
         <p className="text-lg md:text-xl mb-6 font-medium">
           Travel is the only thing you buy that makes you richer.
         </p>
-        {/* <button className="px-6 py-3 text-lg bg-[#F75416] hover:bg-orange rounded shadow transition duration-300">
-          Book Ticket
-        </button> */}
-        <CustomButton
-          label="Book Now"
-          className="px-10 py-3 rounded-sm  bg-orange  text-white text-lg hover:shadow-[4px_4px_0px_0px_#fff] transition duration-200"
-        />
+  
+   <a href="#contact">
+   <button className="px-4 py-2 backdrop-blur-sm border bg-emerald-300/10 border-emerald-500/20 text-white mx-auto text-center rounded-3xl relative mt-4">
+          <span>Click Me →</span>
+          <div className="absolute inset-x-0  h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-emerald-500 to-transparent" />
+        </button>
+   </a>
       </div>
     </div>
   );
@@ -95,10 +95,10 @@ export default Hero;
 //         <motion.p className="font-bold text-xl md:text-6xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-4">
 //           The hero section slideshow <br /> nobody asked for
 //         </motion.p>
-//         <button className="px-4 py-2 backdrop-blur-sm border bg-emerald-300/10 border-emerald-500/20 text-white mx-auto text-center bg-orange relative mt-4">
-//           <span>Book Now →</span>
-//           <div className="absolute inset-x-0  h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-emerald-500 to-transparent" />
-//         </button>
+        // <button className="px-4 py-2 backdrop-blur-sm border bg-emerald-300/10 border-emerald-500/20 text-white mx-auto text-center bg-orange relative mt-4">
+        //   <span>Book Now →</span>
+        //   <div className="absolute inset-x-0  h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-emerald-500 to-transparent" />
+        // </button>
 //       </motion.div>
 //     </ImagesSlider>
 //   );
