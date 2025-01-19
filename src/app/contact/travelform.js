@@ -47,7 +47,7 @@ Duration: ${formData.duration}
         <input
           type="text"
           name="destination"
-          value={formData.destination}
+          value={formData?.destination}
           onChange={handleChange}
           className="border border-[#D3D3D3] rounded-md px-4 py-2 outline-0 w-64"
           placeholder="Destination"
@@ -57,7 +57,7 @@ Duration: ${formData.duration}
         <input
           type="text"
           name="departureDate"
-          value={formData.departureDate}
+       value={formData.departureDate}
           placeholder="Departure Date"
           onFocus={(e) => (e.target.type = "date")}
           onBlur={(e) => (e.target.type = "text")}
@@ -69,7 +69,7 @@ Duration: ${formData.duration}
         <input
           type="text"
           name="returnDate"
-          value={formData.returnDate}
+value={formData.returnDate}
           placeholder="Return Date"
           onFocus={(e) => (e.target.type = "date")}
           onBlur={(e) => (e.target.type = "text")}
@@ -80,7 +80,7 @@ Duration: ${formData.duration}
         <input
           type="number"
           name="duration"
-          value={formData.duration}
+          value={formData?.duration}
           onChange={handleChange}
           className="border border-[#D3D3D3] rounded-md px-4 py-2  w-40"
           placeholder="Duration"
