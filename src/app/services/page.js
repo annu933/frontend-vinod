@@ -2,9 +2,12 @@
 import CustomCard from "../../components/card/page";
 import React from "react";
 import { FaHotel, FaSpa, FaGlassCheers } from "react-icons/fa";
-import { TfiLayoutLineSolid } from "react-icons/tfi";
-import { MdRestaurant, MdSportsTennis } from "react-icons/md";
-import { CgGym } from "react-icons/cg";
+import {
+  FaUmbrellaBeach,
+  FaLandmarkFlag,
+  FaLocationDot,
+} from "react-icons/fa6";
+import { HiTicket } from "react-icons/hi2";
 
 function Service() {
   return (
@@ -12,40 +15,41 @@ function Service() {
       <section>
         <div className="flex flex-wrap w-full gap-8 justify-center items-center my-10">
           <CustomCard
-            title="Rooms & Appartment"
-            content="Enjoy a comfortable stay in our well-furnished rooms."
+            title="Travel Guide"
+            content="Discover detailed and top destinations to make your journey memorable."
+            className="bg-white hover:bg-orange hover:text-white w-full sm:w-1/2 lg:w-1/4"
+            icon={<FaLocationDot />}
+          />
+          <CustomCard
+            title="Ticket Booking"
+            content="Easily book tickets for flights, trains, and buses with our reliable service."
+            className="bg-white hover:bg-orange hover:text-white w-full sm:w-1/2 lg:w-1/4"
+            icon={<HiTicket />}
+          />
+          <CustomCard
+            title="Hotel Booking"
+            content="Find and book the best hotels to ensure a comfortable stay during your travels."
             className="bg-white hover:bg-orange hover:text-white w-full sm:w-1/2 lg:w-1/4"
             icon={<FaHotel />}
           />
+
           <CustomCard
-            title="Food & Restaurant"
-            content="Indulge in delicious meals with a variety of cuisines to satisfy every craving."
+            title="Tourist Transportation"
+            content="Explore local and outstation attractions with our guided and comfortable transport options."
             className="bg-white hover:bg-orange hover:text-white w-full sm:w-1/2 lg:w-1/4"
-            icon={<MdRestaurant />}
+            icon={<FaLandmarkFlag />}
           />
           <CustomCard
-            title="Spa & Fitness"
-            content="Rejuvenate with relaxing spa treatments and maintain your fitness on the go."
+            title="Holiday Packages"
+            content="Discover curated holiday packages for families, couples, and solo travelers."
+            className="bg-white hover:bg-orange hover:text-white w-full sm:w-1/2 lg:w-1/4"
+            icon={<FaUmbrellaBeach />}
+          />
+          <CustomCard
+            title="Luxury Vehicle Rentals"
+            content="Travel in style with our premium and luxury vehicle rental services."
             className="bg-white hover:bg-orange hover:text-white w-full sm:w-1/2 lg:w-1/4"
             icon={<FaSpa />}
-          />
-          <CustomCard
-            title="Sports & Gaming"
-            content="Enjoy exciting sports activities and gaming facilities for all ages."
-            className="bg-white hover:bg-orange hover:text-white w-full sm:w-1/2 lg:w-1/4"
-            icon={<MdSportsTennis />}
-          />
-          <CustomCard
-            title="Event & Party"
-            content="Host memorable events and parties in our premium venues."
-            className="bg-white hover:bg-orange hover:text-white w-full sm:w-1/2 lg:w-1/4"
-            icon={<FaGlassCheers />}
-          />
-          <CustomCard
-            title="Gym & Yoga"
-            content="Stay active with our modern gym equipment and relaxing yoga sessions."
-            className="bg-white hover:bg-orange hover:text-white w-full sm:w-1/2 lg:w-1/4"
-            icon={<CgGym />}
           />
         </div>
       </section>

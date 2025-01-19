@@ -1,66 +1,3 @@
-// "use client";
-// import React, { useState } from "react";
-// import {
-//   HoveredLink,
-//   Menu,
-//   MenuItem,
-//   ProductItem,
-// } from "../../components/ui/navbar-menu";
-// import { cn } from "@/app/utils/cn";
-// import Link from "next/link";
-
-// export default function Navbar({ className }) {
-//   const [active, setActive] = useState(null);
-//   return (
-//     <div className={cn("", className)}>
-//       <Menu setActive={setActive}>
-//         <ProductItem href="#" src="/images/logo.png" alt="logo" />
-//         <div className="flex gap-20">
-//           <Link href={"#"}>
-//             <MenuItem
-//               setActive={setActive}
-//               active={active}
-//               item="Home"
-//             ></MenuItem>
-//           </Link>
-//           <Link href={"#"}>
-//             <MenuItem
-//               setActive={setActive}
-//               active={active}
-//               item="Booking"
-//             ></MenuItem>
-//           </Link>
-//           <MenuItem setActive={setActive} active={active} item="Our Services">
-//             <div className="flex flex-col space-y-4 text-sm">
-//               <HoveredLink href="/services">All Services</HoveredLink>
-//               <HoveredLink href="/booking">All Booking</HoveredLink>
-//               <HoveredLink href="/blog">All blog</HoveredLink>
-//               <HoveredLink href="/services">All Services</HoveredLink>
-//             </div>
-//           </MenuItem>
-//           <Link href={"/contact"}>
-//             <MenuItem
-//               setActive={setActive}
-//               active={active}
-//               item="Contact Us"
-//             ></MenuItem>
-//           </Link>
-//         </div>
-//         <div>
-//           <button className="signup px-4 py-2 rounded-md border border-black hover:border-white bg-orange hover:bg-blue text-black hover:text-white text-sm hover:shadow-[4px_4px_0px_0px_orange] transition duration-200 mr-2">
-//             Sign up
-//           </button>
-//           <button className="px-4 py-2 rounded-md border border-black bg-white text-black text-sm hover:shadow-[4px_4px_0px_0px_orange] transition duration-200">
-//             Login
-//           </button>
-//         </div>
-//       </Menu>
-//     </div>
-//   );
-// }
-
-// responsive-14jan2025
-
 "use client";
 import React, { useState, useEffect, useRef } from "react";
 import {
@@ -121,17 +58,22 @@ export default function Navbar({ className }) {
         <div className="flex flex-col xl:w-full hidden lg:block xl:block">
           <div className="flex justify-between bg-white px-5 py-3 ">
             <div className="flex ">
-              <h5 className="text-gray lg:mr-2">
-                {" "}
-                <MdEmail color="orange" className="inline-block lg:mr-2" />{" "}
-                jaymaatravels@gmail.com
-              </h5>
+              <a href="mailto:jaimaatravels008@gmail.com">
+                <h5 className="text-gray lg:mr-2">
+                  {" "}
+                  <MdEmail
+                    color="orange"
+                    className="inline-block lg:mr-2"
+                  />{" "}
+                  jaimaatravels008@gmail.com
+                </h5>
+              </a>
               <h5 className="text-gray lg:mr-2">
                 <FaPhone color="orange" className="inline-block lg:mr-2" />
-                05946369233,+91 8894887494
+                09634875631,9927239680,7417007921
               </h5>
               <a
-                href="https://wa.me/8894887494"
+                href="https://wa.me/096348 75631"
                 target="_blank"
                 className="text-gray"
               >
@@ -139,7 +81,7 @@ export default function Navbar({ className }) {
                   color="green"
                   className="inline-block lg:mr-2"
                 />
-                8894887494
+                096348 75631
               </a>
             </div>
             <div className="flex gap-4">
@@ -234,22 +176,26 @@ export default function Navbar({ className }) {
 
               {/* Action Buttons */}
               <div className="flex gap-4 lg:ml-4   sm:block  lg:hidden">
-                <button className="signup px-4 py-2 rounded-md border border-black hover:border-white bg-orange hover:bg-blue text-black hover:text-white text-sm hover:shadow-[4px_4px_0px_0px_orange] transition duration-200">
-                  Sign up
-                </button>
-                <button className="px-4 py-2 rounded-md border border-black bg-white text-black text-sm hover:shadow-[4px_4px_0px_0px_orange] transition duration-200">
+                <a href="#contact">
+                  <button className="signup px-4 py-2 rounded-md border border-black hover:border-white bg-orange hover:bg-blue text-black hover:text-white text-sm hover:shadow-[4px_4px_0px_0px_orange] transition duration-200">
+                    Book You Ticket
+                  </button>
+                </a>
+                {/* <button className="px-4 py-2 rounded-md border border-black bg-white text-black text-sm hover:shadow-[4px_4px_0px_0px_orange] transition duration-200">
                   Login
-                </button>
+                </button> */}
               </div>
             </div>
             {/* Action Buttons for desktop side */}
             <div className="  lg:ml-4 hidden lg:block">
-              <button className=" px-4 py-2 rounded-md border border-black hover:border-white bg-orange hover:bg-blue text-black hover:text-white text-sm hover:shadow-[4px_4px_0px_0px_orange] transition duration-200 mr-3">
-                Sign up
-              </button>
-              <button className="px-4 py-2 rounded-md border border-black bg-white text-black text-sm hover:shadow-[4px_4px_0px_0px_orange] transition duration-200">
+              <a href="#contact">
+                <button className=" px-4 py-2 rounded-md border border-black hover:border-white bg-orange hover:bg-blue text-black hover:text-white text-sm hover:shadow-[4px_4px_0px_0px_orange] transition duration-200 mr-3">
+                  Book You Ticket
+                </button>
+              </a>
+              {/* <button className="px-4 py-2 rounded-md border border-black bg-white text-black text-sm hover:shadow-[4px_4px_0px_0px_orange] transition duration-200">
                 Login
-              </button>
+              </button> */}
             </div>
           </div>
         </div>

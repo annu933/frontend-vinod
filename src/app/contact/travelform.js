@@ -16,7 +16,26 @@ export default function TravelFormBanner() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Form Submitted:", formData);
+
+    // Redirect to WhatsApp with the message
+    const phoneNumber = "6267293696";
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+      `
+Destination: ${formData.destination}
+Departure Date: ${formData.departureDate}
+Return Date: ${formData.returnDate}
+Duration: ${formData.duration}
+`
+    )}`;
+    window.open(whatsappUrl, "_blank");
+
+    // Clear the form
+    setFormData({
+      destination: "",
+      departureDate: "",
+      returnDate: "",
+      duration: "",
+    });
   };
 
   return (
@@ -36,18 +55,24 @@ export default function TravelFormBanner() {
         />
 
         <input
-          type="date"
+          type="text"
           name="departureDate"
-          value={formData?.departureDate}
+       value={formData.departureDate}
+          placeholder="Departure Date"
+          onFocus={(e) => (e.target.type = "date")}
+          onBlur={(e) => (e.target.type = "text")}
           onChange={handleChange}
           className="border border-[#D3D3D3] rounded-md px-4 py-2 outline-0 "
           required
         />
 
         <input
-          type="date"
+          type="text"
           name="returnDate"
-          value={formData?.returnDate}
+value={formData.returnDate}
+          placeholder="Return Date"
+          onFocus={(e) => (e.target.type = "date")}
+          onBlur={(e) => (e.target.type = "text")}
           onChange={handleChange}
           className="border border-[#D3D3D3] rounded-md px-4 py-2 outline-0"
         />
@@ -57,10 +82,11 @@ export default function TravelFormBanner() {
           name="duration"
           value={formData?.duration}
           onChange={handleChange}
-          className="border border-[#D3D3D3] rounded-md px-4 py-2  w-24"
-          placeholder="Days"
+          className="border border-[#D3D3D3] rounded-md px-4 py-2  w-40"
+          placeholder="Duration"
           required
         />
+
 
         <button
           type="submit"

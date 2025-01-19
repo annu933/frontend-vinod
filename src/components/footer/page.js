@@ -119,16 +119,18 @@ export default function Footer() {
           {/* About Section */}
           <div>
             <div className="flex items-center h-20 w-auto">
-              <img
-                className="h-10 w-auto text-orange"
-                src="/images/logo.png"
-                alt="Your Company"
-              />
+              <a href="/">
+                <img
+                  className="h-10 w-auto text-orange"
+                  src="/images/logo.png"
+                  alt="Your Company"
+                />
+              </a>
             </div>
             <p className="text-sm">
-              Welcome to TravelSite, your one-stop solution for discovering
-              amazing travel destinations and booking hassle-free trips. Let’s
-              explore the world together!
+              At Jay Maa Travels, we provide seamless travel experiences with
+              bus and taxi services, along with curated holiday packages. Let us
+              make your journey safe, convenient, and unforgettable!
             </p>
           </div>
 
@@ -146,21 +148,21 @@ export default function Footer() {
               <li className="flex items-center space-x-2">
                 <FaPhone />
                 <a
-                  href="https://wa.me/1234567890"
+                  href="https://wa.me/9634875631"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-orange"
                 >
-                  +91 8894887494
+                  9634875631
                 </a>
               </li>
               <li className="flex items-center space-x-2">
                 <MdEmail />
                 <a
-                  href="mailto:info@travelsite.com"
+                  href="mailto:jaimaatravels008@gmail.com"
                   className="hover:text-orange"
                 >
-                  jaymaatravels@gmail.com
+                  jaimaatravels008@gmail.com
                 </a>
               </li>
             </ul>
