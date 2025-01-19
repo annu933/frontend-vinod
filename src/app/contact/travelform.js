@@ -87,6 +87,7 @@ Duration: ${formData.duration}
           required
         />
 
+
         <button
           type="submit"
           className="bg-orange text-white font-medium px-10 py-2 rounded-sm hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
