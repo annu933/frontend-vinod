@@ -124,6 +124,7 @@ export default function Footer() {
                   className="h-10 w-auto text-orange"
                   src="/images/logo.png"
                   alt="Your Company"
+                  loading="lazy"
                 />
               </a>
             </div>
