@@ -359,6 +359,7 @@ export const ImagesSlider = ({
 //               <img
 //                 src={slides[currentIndex].image}
 //                 alt={slides[currentIndex].text.title}
+//                 loading="lazy"
 //                 className="h-1/2 w-1/2 m-auto"
 //               />
 //             </div>
