@@ -7,7 +7,7 @@ const CustomCard = ({ title, content, imageUrl, footer, className, icon }) => {
     <div
       className={`card upper-parent text-blue transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110  duration-300 shadow-xl hover:shadow-xl rounded-md p-8 ${className}`}
     >
-      {imageUrl && <img src={imageUrl} alt={title} className="card-img-top" />}
+      {imageUrl && <img src={imageUrl} alt={title} loading="lazy" className="card-img-top" />}
       <div className="card-body">
         {icon && (
           <div className="flex justify-center items-center ">

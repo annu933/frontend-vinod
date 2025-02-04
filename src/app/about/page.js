@@ -18,13 +18,14 @@ function About() {
             <img
               src="/images/aboutUs.jpg"
               alt="aboutUs"
+              loading="lazy"
               className="w-full max-w-[450px] h-auto lg:h-[600px]"
             />
           </div>
 
           {/* Right Content */}
           <div className="relative w-full lg:w-1/2">
-            <div className="shadow-xl p-4 bg-white relative lg:absolute lg:-left-20 lg:top-[3rem] z-50">
+            <div className="shadow-xl p-4 bg-white relative lg:absolute lg:-left-20 lg:top-[3rem] z-30">
               <h1 className="text-xl lg:text-2xl text-orange flex items-center font-montserrat">
                 About Us <TfiLayoutLineSolid className="ml-2" />
               </h1>
@@ -41,16 +42,19 @@ function About() {
                 <img
                   src="/images/jaipur2.jpg"
                   alt="about1"
+                  loading="lazy"
                   className="w-[120px] lg:w-[250px] rounded-sm"
                 />
                 <img
                   src="/images/about2.jpg"
                   alt="about2"
+                  loading="lazy"
                   className="w-[120px] lg:w-[250px] rounded-sm"
                 />
                 <img
                   src="/images/about1.jpg"
                   alt="about2"
+                  loading="lazy"
                   className="w-[120px] lg:w-[250px] rounded-sm"
                 />
               </div>
