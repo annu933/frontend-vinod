@@ -51,13 +51,14 @@ const TravelContactForm = () => {
 
     const phoneNumber = "6267293696"; // Replace with your WhatsApp number
     const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
-      `Name: ${formData.name}
-Email: ${formData.email}
-Phone: ${formData.phone}
-Destination: ${selectedDestination}
-Travel Date: ${formData.travelDateFrom}
-Number of Travelers: ${formData.travelers}
-Message: ${formData.message}`
+    `
+    Name: ${formData.name}
+    Email: ${formData.email}
+    Phone: ${formData.phone}
+    Destination: ${selectedDestination}
+    Travel Date: ${formData.travelDateFrom}
+    Number of Travelers: ${formData.travelers}
+    Message: ${formData.message}`
     )}`;
 
     // Open WhatsApp in a new tab
