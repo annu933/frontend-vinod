@@ -27,7 +27,7 @@ export default function Contact() {
           ></iframe>
         </div>
       </div>
-      <div className="lg:w-1/2">
+      <div className="w-full lg:w-1/2">
         <ContactForm />
       </div>
     </div>
